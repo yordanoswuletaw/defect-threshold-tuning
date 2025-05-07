@@ -79,14 +79,6 @@ The main analysis is contained in `eda.ipynb`, which includes:
 - `analyze_polygon_areas.py`: Compares polygon areas between predictions and annotations
 - `polygons_comparator.py`: Matches predictions to ground truth annotations
 
-## Generated Visualizations
-
-The analysis generates several visualization files:
-- `confidence_distribution.png`: Distribution of prediction confidence scores
-- `performance_metrics.png`: Precision, recall, and F1 scores at different thresholds
-- `polygon_area_analysis.png`: Comparison of prediction and annotation areas
-- `spatial_analysis.png`: Spatial distribution of defects
-
 ## Results
 
 The analysis provides:
