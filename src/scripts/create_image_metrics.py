@@ -21,6 +21,6 @@ def create_image_metrics(anno_df, pred_df):
             })
 
     image_metrics_df = pd.DataFrame(image_metrics)
-    image_metrics_df.to_csv('data/image_metrics.csv', index=False)
+    image_metrics_df.to_csv('../data/image_metrics.csv', index=False)
     print("Image metrics created and saved to data/image_metrics.csv")
     return image_metrics_df

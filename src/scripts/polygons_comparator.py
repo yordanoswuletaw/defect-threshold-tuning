@@ -91,6 +91,6 @@ def match_polygons(anno_df, pred_df, iou_threshold=0.5):
     
     matches_df = pd.DataFrame(results)
     # Save results
-    matches_df.to_csv('data/polygon_matches.csv', index=False)
+    matches_df.to_csv('../data/polygon_matches.csv', index=False)
     print("Polygon matches created and saved to data/polygon_matches.csv")
     return matches_df

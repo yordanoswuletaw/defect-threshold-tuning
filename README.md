@@ -6,20 +6,22 @@ This project analyzes defect detection model performance and determines optimal 
 
 ```
 .
-├── data/
+├── data/                     # Data directory
 │   ├── anno_df.csv           # Ground truth annotations
 │   ├── pred_df.csv           # Model predictions
 │   ├── polygon_matches.csv    # Matched predictions and annotations
 │   ├── image_metrics.csv      # Per-image performance metrics
 │   └── threshold_metrics.csv  # Performance metrics at different thresholds
-├── scripts/
-│   ├── analyze_confidence.py
-│   ├── analyze_pr_curve.py
-│   ├── analyze_polygon_areas.py
-│   └── polygons_comparator.py
-├── eda.ipynb                 # Main analysis notebook
+├── src/                      # Source code directory
+│   ├── scripts/               # Analysis scripts package
+│   │   ├── __init__.py
+│   │   ├── analyze_confidence.py
+│   │   ├── analyze_pr_curve.py
+│   │   ├── analyze_polygon_areas.py
+│   │   └── polygons_comparator.py
+│   └── eda.ipynb              # Main analysis notebook
 ├── pyproject.toml            # Poetry dependency configuration
-└── README.md
+└── README.md                 # Project documentation
 ```
 
 ## Setup
@@ -108,9 +110,9 @@ The analysis provides:
 
 2. Run individual analysis scripts:
    ```bash
-   poetry run python scripts/analyze_confidence.py
-   python scripts/analyze_pr_curve.py
-   python scripts/analyze_polygon_areas.py
+   poetry run python src/scripts/analyze_confidence.py
+   poetry run python src/scripts/analyze_pr_curve.py
+   poetry run python src/scripts/analyze_polygon_areas.py
    ```
 
 ## License
