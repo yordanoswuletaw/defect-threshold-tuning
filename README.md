@@ -11,7 +11,9 @@ This project analyzes defect detection model performance and determines optimal 
 │   ├── pred_df.csv           # Model predictions
 │   ├── polygon_matches.csv    # Matched predictions and annotations
 │   ├── image_metrics.csv      # Per-image performance metrics
-│   └── threshold_metrics.csv  # Performance metrics at different thresholds
+│   └── threshold_metrics_10.csv  # Performance metrics at 10 thresholds
+│   └── threshold_metrics_100.csv  # Performance metrics at 100 thresholds
+│   └── threshold_metrics_1000.csv  # Performance metrics at 1000 thresholds
 ├── src/                      # Source code directory
 │   ├── scripts/               # Analysis scripts package
 │   │   ├── __init__.py
@@ -48,7 +50,9 @@ This project analyzes defect detection model performance and determines optimal 
    - Generated Analysis Files:
      * `polygon_matches.csv`: Results of matching predictions to ground truth
      * `image_metrics.csv`: Performance metrics calculated per image
-     * `threshold_metrics.csv`: Model performance at different confidence thresholds
+     * `threshold_metrics_10.csv`: Model performance at 10 confidence thresholds
+     * `threshold_metrics_100.csv`: Model performance at 100 confidence thresholds
+     * `threshold_metrics_1000.csv`: Model performance at 1000 confidence thresholds
 
 ## Analysis Overview
 
